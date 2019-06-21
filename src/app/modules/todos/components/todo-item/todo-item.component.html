@@ -1,0 +1,5 @@
+<div class="flex items-center">
+    <input [checked]="todo.completed" (input)="onToggleTodo(todo)" type="checkbox" name="complete">
+    <p class="text-green" [ngClass]="todoTitleClasses">{{ todo.title }}</p>
+    <button (click)="onDeleteTodo(todo)" class="del">x</button>
+</div>

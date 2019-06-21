@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-flow: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-green {
+  color: green;
+}
