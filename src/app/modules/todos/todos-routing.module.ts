@@ -3,8 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TodosComponent } from './pages/todos/todos.component';
 
-import { TodosModule } from './todos.module';
-
 const routes = [
   {
     path: 'todos',
@@ -15,7 +13,6 @@ const routes = [
 @NgModule({
   declarations: [],
   imports: [
-    TodosModule,
     RouterModule.forRoot(routes),
   ],
   // exports: [RouterModule] app.module exports
