@@ -1,0 +1,10 @@
+<div>
+    <h2> Welcome to {{ title }}! </h2>
+    <nav>
+        <a routerLink="/todos">Home</a> | 
+        <a routerLink="/about">About</a>
+    </nav>
+    <!-- target the router-outlet as a projected facet layout component instance-->
+    <ng-content select='router-outlet'></ng-content>
+    <div> Footer </div>
+</div>

@@ -16,10 +16,16 @@ describe('LayoutComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(LayoutComponent);
     component = fixture.componentInstance;
+    component.title = 'test-title';
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render title in a h1 tag', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h2').textContent).toContain('Welcome to test-title!');
   });
 });

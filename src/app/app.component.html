@@ -1,10 +1,6 @@
 <div style="text-align:center">
-    <app-layout [title]="title">
-        <!-- renders the app navigation -->
-        <!-- <router-outlet></router-outlet> -->
-        <!-- <div class="project"> -->
-        <!--     <div>Me</div> -->
-        <!--     <div>Us</div> -->
-        <!-- </div> -->
+    <!-- layout to render navigation items and sidebars, notfication panes etc all items that are present across pages -->
+    <app-layout [title]="title"> 
+        <router-outlet></router-outlet><!-- outlet for todos, about modules -->
     </app-layout>
 </div>

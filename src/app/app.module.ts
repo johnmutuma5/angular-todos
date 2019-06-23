@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { LayoutComponent } from './components/layout/layout.component';
+import { LayoutComponent } from './shared/components/layout/layout.component';
 
 @NgModule({
   declarations: [

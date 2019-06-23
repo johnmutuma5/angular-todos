@@ -19,19 +19,13 @@ export class TodoItemComponent implements OnInit {
     this.setTodoTitleClasses();
   }
 
-  private setTodoTitleClasses(): void {
+  public setTodoTitleClasses(): void {
     this.todoTitleClasses = {
-      completed: this.todo.completed
+       completed: this.todo.completed
     };
   }
 
-  // todoTitleClasses() {
-  //   return  {
-  //     completed: this.todo.completed,
-  //   };
-  // }
-
-  private onToggleTodo(todo: Todo): void {
+  public onToggleTodo(todo: Todo): void {
     // send to server
     this.todo.completed = !todo.completed;
     this.setTodoTitleClasses();
@@ -42,7 +36,7 @@ export class TodoItemComponent implements OnInit {
     });
   }
 
-  private onDeleteTodo(todo: Todo): void {
+  public onDeleteTodo(todo: Todo): void {
     this.deleteTodoEvent.emit(todo);
   }
 }
